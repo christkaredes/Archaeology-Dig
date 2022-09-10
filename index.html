@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Archaeology Dig</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script type="text/javascript" src="board.js"></script>
+<script type="text/javascript" src="game.js"></script>
+
+</head>
+
+<body>
+
+<h1>Archaeology Board</h1>
+<p>Click on the X's to dig up the past!</p>
+<p>(Use [Ctrl and +] to get a better view of the grid)</p>
+
+<div class= "codex">
+<p>P= Palace</p>
+<p>T= Temple</p>
+<p>F= Forum</p>
+<p>H= House</p>
+<p>h= Hut</p>
+</div>
+    
+<style>
+    body 
+    {
+        background-color: #e3c679;
+    }
+    
+    .codex
+    {
+        float:left;
+    }
+    #board tr
+    {
+        cursor: pointer;
+    }
+
+</style>
+    
+<table id = "board">
+<tr>
+<td>
+
+</td>
+</table>
+    
+<div class= info>
+<label for="digTries">Digs: </label>
+<input id= "digTries" type="text" size = "1"/>
+
+<br><br>
+    
+<label for="successfulDigs">Successful Digs: </label>
+<input id= "successfulDigs" type="text" size = "1"/>
+
+<br><br>
+    
+<label for="excavatedRuins">Excavated Ruins: </label>
+<input id= "excavatedRuins" type="text" size = "1"/>
+
+<br><br>
+
+<label for="youFound">You Found: </label>
+<input id= "youFound" type="text" size = "4"/>
+    
+<br><br>
+    
+<div id="fullyExcavated"></div>
+
+<br><br>
+
+<div id= "winner" 
+     style="display:none">
+</div>
+    
+<div id= "playerPerformance" 
+     style="display:none">
+</div>
+    
+<br><br>
+
+</div>
+</body>
+</html>
